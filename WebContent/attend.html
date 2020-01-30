@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Attend</title>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<style>
+</style>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="taketest.html"><span class="glyphicon glyphicon-pencil"></span> TakeTest</a></li>
+        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="report.html"><span class="glyphicon glyphicon-list-alt"></span> Report</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> MounikaKuppuraj</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+<form action="attend" method="post">
+<div style='width :1024px;margin:0 auto;'>
+<div align="left" style="font-size:20px;" class="text-danger">
+<label>Duration:</label>
+<input type="text" id=duration name=duration>
+</div>
+<div align="center" style="font-size:20px;" class="text-danger">
+<label>Question.No:1</label>
+<br>
+  <textarea class="form-control" rows="4" id="Question"></textarea>
+</div>
+<br>
+ <div align="left" style="font-size:20px;" class="text-danger">
+<label>Answers</label>
+<br>
+</div>
+<div class="options">
+ <div class="form-group">      
+         1)&nbsp;<input type="radio" name="reason" class="form-cntrol">
+         <input type = "text" id=option1 name=option1>
+      </div>
+      <br>
+      <div class="form-group">
+          2)&nbsp;<input type="radio" name="reason">
+         <input type = "text" id=option2 name=option2>
+      </div>
+      <br>
+      <div class="form-group">
+          3)&nbsp;<input type="radio" name="reason">
+         <input type = "text" id=option3 name=option3>
+      </div>
+      <br>
+      <div class="form-group">
+          4)&nbsp;<input type="radio" name="reason" >
+         <input type = "text" id=option4 name=option4 >
+      </div>
+      </div>
+      <br>
+      <div  class="input-group">
+
+   <button type="submit" class="btn btn-success">Submit</button>
+&nbsp;   <a href="managequestion.html" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-circle-arrow-right"></span> Next</a>
+  </div>
+      </div>
+      </form>
+</body>
+</html>

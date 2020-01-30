@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+     <li> <a href="managetest.html"><span class="glyphicon glyphicon-time"></span> Test</a></li>
+     <li class="active"> <a href="managequestion.html"><span class="glyphicon glyphicon-list-alt"></span> Questions</a></li>
+    <li>  <a href="ManageUser"><span class="glyphicon glyphicon-user"></span> Users</a></li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+            <li><a href="admin.html"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+<div align="right" >
+<a href="ViewQuestion" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-th-list"></span> View</a>
+<a href="editquestion.html" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+<a href="deleteQuestion.html" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+</div>
+<form action="ques" method="post">
+<div style='width :512px;margin:0px 0 0 320px;'>
+
+<div class="form-group">
+<br>
+<br>
+<div class="form-group">
+  <label for="TestName" class="col-2 col-form-label">TestName</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name="TestName" id="TestName">
+  </div>
+</div>
+
+  <label for="Question">Question</label>
+  <textarea class="form-control" rows="5" id="Question" name="Question"></textarea>
+</div>
+<label for="options">Answers</label>
+<div class="options">
+ <div class = "input-group">
+         <span class = "input-group-addon">Option 1</span>
+         <input type = "text" class = "form-control" id="Option1" name="Option1">
+      </div>
+      <br>
+      <div class = "input-group">
+         <span class = "input-group-addon">Option 2</span>
+         <input type = "text" class = "form-control" id="Option2" name="Option2">
+      </div>
+<br>
+      <div class = "input-group">
+         <span class = "input-group-addon">Option 3</span>
+         <input type = "text" class = "form-control" id="Option3" name="Option3">
+      </div>
+      <br>
+      <div class = "input-group">
+         <span class = "input-group-addon">Option 4</span>
+         <input type = "text" class = "form-control" id="Option4" name="Option4">
+      </div>
+      </div>
+      <br>
+<label for="radioCorrect">Correct Answer</label>
+<div class="radioCorrect">
+<label class="radio-inline"><input type="radio" name="optradio" value="Option1">Option 1</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="Option2">Option 2</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="Option3">Option 3</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="Option4">Option 4</label>
+</div>
+<br>
+<div  class="input-group">
+
+   <button type="submit" class="btn btn-success">Submit</button>
+&nbsp;   <a href="managequestion.html" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-circle-arrow-right"></span> Next</a>
+ <h4>click on submit button before entering next question!</h4>
+  </div>
+</div>
+</form>
+</body>
+</html>
